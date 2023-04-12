@@ -83,7 +83,7 @@ while(1){
     cs = 0;
     command = 0x03;
     spi.write(command);
-    ThisThread::sleep_for(000ms);
+    ThisThread::sleep_for(1000ms);
     cs = 1;
 }
       // Select the device by seting chip select low
