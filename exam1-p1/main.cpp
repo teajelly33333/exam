@@ -53,8 +53,7 @@ int main()
     uint16_t sample[360];
     for (int i = 0; i < 360; i++) {
             rads = (pi * i) / 180.0f;
-            sample[i] = (uint16_t)amplitude()*offset+offset;
-            //sample[i] = (uint16_t)(amplitude() * (offset * (cos(rads + pi))) + offset);
+            sample[i] = (uint16_t)(amplitude() * (offset * (cos(rads + pi))) + offset);
     }
     
     while (true) {
