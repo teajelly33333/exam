@@ -41,7 +41,6 @@ void slave()
    int v;
    while(1){
        v = device.read();
-       printf("%d", v);
        if(v == 1){
             lcd.locate(2, 1);
             ThisThread::sleep_for(1000ms);
